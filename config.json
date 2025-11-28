@@ -1,0 +1,9 @@
+{
+  "input_size": 640,
+  "confidence_threshold": 0.28,
+  "iou_threshold": 0.45,
+  "frame_skip": 0,
+  "cooldown_seconds": 4,
+  "alarm_window_seconds": 2,
+  "alarm_window_min_hits": 1
+}
