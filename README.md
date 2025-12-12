@@ -5,7 +5,14 @@ A **real-time, edge-based surveillance system** powered by **YOLOv8** for detect
 All video processing happens **locally on your machine** — no cloud uploads, ensuring **maximum privacy**.
 
 ---
+## 📸 Output Demo
 
+Here’s an example of the system detecting a weapon and fire in real time:
+
+![Edge YOLO Output](Screenshot_2025-11-28_094146.png)
+
+
+---
 ## 🚀 Features
 
 - **Real-Time Detection**: Fire, smoke, knives, guns, pistols via webcam/laptop camera  
