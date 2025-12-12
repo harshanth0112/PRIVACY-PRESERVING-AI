@@ -39,59 +39,78 @@ EdgeYOLO_Project/
 │   │   └── app.js
 │   └── index.html
 └── README.md
-🛠️ Installation Guide
-1. Create Virtual Environment
-Open your terminal (CMD) inside the project folder and create a Python 3.10 environment:
+## 🛠️ Installation Guide
 
-Bash
+### 1. Create a Python 3.10 Virtual Environment
 
-# Verify you have Python 3.10 installed
+```bash
+# Ensure Python 3.10 is installed
 py -3.10 -m venv venv310
 
 # Activate the environment
 venv310\Scripts\activate
-(You should see (venv310) at the start of your command line).
-
 2. Install Dependencies
-Navigate to the backend folder and install the strict versions required:
+Navigate to the backend directory:
 
-Bash
-
+bash
+Copy code
 cd backend
+Install required packages:
+
+bash
+Copy code
 pip install ultralytics==8.2.0
 pip install opencv-python
 pip install flask
 pip install numpy==1.26.4
-⚠️ Critical: You must use numpy==1.26.4. Newer versions (2.x) will break PyTorch on Windows.
+⚠️ Important:
+numpy==1.26.4 is mandatory. Newer 2.x versions break PyTorch on Windows.
 
-3. Setup Model
-Place your trained YOLOv8 model file (best.pt) inside the backend/models/ directory. The model should be trained on classes like: fire, smoke, knife, gun, pistol.
+3. Add Your YOLO Model
+Place your trained model file:
 
-▶️ Usage
-Start the Backend: From the backend folder (with venv activated), run:
+bash
+Copy code
+backend/models/best.pt
+The model must be trained on one or more classes:
+fire, smoke, knife, gun, pistol
 
-Bash
-
+▶️ Running the System
+1. Start the Backend
+bash
+Copy code
 python app.py
-The server will start at http://127.0.0.1:8000.
+Backend runs at:
 
-Launch the Frontend: Open the frontend/index.html file directly in your web browser.
+cpp
+Copy code
+http://127.0.0.1:8000
+2. Launch the Frontend
+Open:
 
-Test the System:
+bash
+Copy code
+frontend/index.html
+directly in any browser.
 
-Show a knife or gun (real or on a phone screen).
+3. Test Detection
+Show a knife/gun (real or on phone).
 
-Play a video of fire/smoke.
+Play a fire/smoke video.
 
-The system will beep and display a red bounding box if the threat persists.
+The system will:
+✔ draw bounding boxes
+✔ beep
+✔ log the event
 
-Stop: Press CTRL + C in the terminal to stop the server.
+4. Stop the Server
+Press CTRL + C in the terminal.
 
-⚙️ Configuration
-You can tune detection sensitivity in backend/config.json:
+⚙️ Configuration (backend/config.json)
+Adjust detection sensitivity:
 
-JSON
-
+json
+Copy code
 {
   "confidence_threshold": 0.28,
   "iou_threshold": 0.45,
@@ -100,4 +119,9 @@ JSON
   "alarm_window_min_hits": 1
 }
 ⚠️ Disclaimer
-This project is for educational and research purposes. Please adhere to all local laws regarding surveillance and privacy when deploying this system.
+This project is intended for educational and research use only.
+Before deploying in real-world environments, ensure compliance with all applicable surveillance and privacy laws.
+
+⭐ Contributions
+Pull requests and enhancements are welcome.
+Feel free to submit issues or feature requests.
