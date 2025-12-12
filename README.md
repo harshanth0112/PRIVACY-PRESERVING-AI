@@ -1,4 +1,3 @@
-
 ```markdown
 # 🔒 Edge YOLO Surveillance – Privacy-Preserving AI
 
@@ -131,3 +130,4 @@ Ensure compliance with **local surveillance and privacy laws** before real-world
 
 Pull requests, feature requests, and enhancements are welcome!  
 Help improve privacy-preserving AI for edge devices.
+```
