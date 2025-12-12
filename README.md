@@ -1,4 +1,3 @@
-Got it 👍 — you’d like the polished README content turned into proper **Markdown code** so you can drop it straight into your repository. Here’s the full `README.md` code block:
 
 ```markdown
 # 🔒 Edge YOLO Surveillance – Privacy-Preserving AI
@@ -136,6 +135,4 @@ Help improve privacy-preserving AI for edge devices.
 
 ---
 
-This is now **ready-to-use Markdown** — just copy it into your `README.md` file.  
 
-Would you like me to also add **badges** (Python version, license, stars, etc.) at the top so it looks more professional on GitHub?
