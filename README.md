@@ -7,10 +7,9 @@ All video processing happens **locally on your machine** — no cloud uploads, e
 ---
 ## 📸 Output Demo
 
-Here’s an example of the system detecting a weapon and fire in real time:
+Here’s an example of Edge YOLO Surveillance detecting a weapon in real time:
 
-![Edge YOLO Output](Screenshot_2025-11-28_094146.png)
-
+![Gun Detection – YOLOv8](Screenshot%202025-11-28%20094146.png)
 
 ---
 ## 🚀 Features
