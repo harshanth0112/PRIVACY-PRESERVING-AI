@@ -1,4 +1,4 @@
-```markdown
+
 # 🔒 Edge YOLO Surveillance – Privacy-Preserving AI
 
 A **real-time, edge-based surveillance system** powered by **YOLOv8** for detecting weapons (knives, guns, pistols) and hazards (fire, smoke).  
